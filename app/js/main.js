@@ -1,5 +1,7 @@
 $(function () {
 
+	var mixer = mixitup('.works__items');
+
 	function getTimeRemaining(endtime) {
 		const total = Date.parse(endtime) - Date.parse(new Date());
 		const seconds = Math.floor((total / 1000) % 60);

@@ -281,4 +281,132 @@
 	}
 }
 
+.works {
+	padding: 150px 0 180px;
+	&__title {
+		margin-bottom: 120px;
+	}
+	&__buttons {
+		margin-bottom: 165px;
+	}
+	&__btn {
+		margin-right: 40px;
+		font-size: 13px;
+		line-height: 18px;
+		letter-spacing: 0.8px;
+		opacity: 30%;
+		border: 0;
+		padding: 0;
+		outline: none;
+		background-color: transparent;
+		color: $title;
+	}
+	.mixitup-control-active {
+		transition: all 0.5s;
+		opacity: 1;
+		@extend %OpenSans-600;
+	}
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__item {
+		width: 455px;
+		margin-bottom: 145px;
+		position: relative;
+	}
+	&__item--right {
+		bottom: 390px;
+	}
+	&__item-img {
+		margin-bottom: 20px;
+	}
+	&__inner {
+		position: relative;
+		&::before {
+			content: "";
+			width: 220px;
+			height: 3px;
+			position: absolute;
+			right: -120px;
+			bottom: 152px;
+			background-color: $accent;
+		}
+		&::after {
+			content: "";
+			width: 90px;
+			height: 3px;
+			position: absolute;
+			right: -10px;
+			bottom: 86px;
+			background-color: $accent;
+		}
+	}
+	&__item-title {
+		font-size: 48px;
+		line-height: 72px;
+		letter-spacing: 3px;
+		color: $title;
+		position: absolute;
+		right: -120px;
+		bottom: 55px;
+		@extend %Oswald-300;
+	}
+	&__item-title--left {
+		left: -130px;
+		bottom: 160px;
+	}
+	&__item-title--apples {
+		right: -157px;
+		bottom: 150px;
+	}
+	&__item-box {
+		width: 290px;
+		margin-left: 175px;
+	}
+	&__item-subtitle {
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: 25px;
+		letter-spacing: 1.1px;
+		@extend %OpenSans-300;
+	}
+	&__item-text {
+		margin-bottom: 20px;
+		font-size: 13px;
+		line-height: 23px;
+		color: #c2c2c2;
+		@extend %OpenSans-300;
+	}
+	&__item-link {
+		font-size: 13px;
+		line-height: 18px;
+		letter-spacing: 0.8px;
+		color: $title;
+	}
+	&__item-link--accent {
+		&::before {
+			content: "";
+			width: 43px;
+			height: 3px;
+			position: absolute;
+			left: 198px;
+			bottom: 11px;
+			background-color: $accent;
+		}
+		&::after {
+			content: "";
+			width: 28px;
+			height: 3px;
+			position: absolute;
+			left: 170px;
+			bottom: 11px;
+			z-index: -1;
+			background-color: $accent;
+		}
+	}
+}
+
 @import "media";

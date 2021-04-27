@@ -4,4 +4,115 @@
 @import "libs";
 @import "global";
 
+.header {
+	background-image: url("../img/header/bg.jpg");
+	z-index: 10;
+	&__wrapper {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__nav {
+		padding-top: 80px;
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__nav-list {
+		width: 500px;
+		display: flex;
+		justify-content: space-between;
+		margin-right: 310px;
+	}
+	&__nav-item {
+		position: relative;
+		&::before {
+			content: "";
+			width: 20px;
+			height: 2px;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			background-color: $accent;
+		}
+		&:first-child {
+			&::before {
+				width: 53px;
+			}
+		}
+	}
+	&__nav-link {
+		&:hover {
+			transition: all 0.5s;
+			color: $accent;
+		}
+	}
+	&__title {
+		margin-bottom: 25px;
+		text-align: center;
+		font-size: 72px;
+		line-height: 107px;
+		letter-spacing: 4.5px;
+		color: #fff;
+		@extend %Oswald-500;
+	}
+	&__subtitle {
+		text-align: center;
+		font-size: 20px;
+		line-height: 27px;
+		color: #fff;
+		@extend %OpenSans-400;
+	}
+	&__clock {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+		@extend %Oswald-700;
+	}
+	&__clock-item {
+		align-self: flex-end;
+	}
+	&__hours {
+		margin-right: 10px;
+		font-size: 36px;
+		line-height: 49px;
+		letter-spacing: 2.3px;
+		color: #fff;
+		position: relative;
+		z-index: 10;
+		&::after {
+			content: "";
+			width: 15px;
+			height: 2px;
+			position: absolute;
+			top: 25px;
+			left: -5px;
+			background-color: $accent;
+		}
+		&::before {
+			content: "";
+			width: 35px;
+			height: 2px;
+			position: absolute;
+			top: 25px;
+			left: 10px;
+			z-index: -1;
+			background-color: $accent;
+		}
+	}
+	&__minutes {
+		font-size: 18px;
+		line-height: 26px;
+		letter-spacing: 1.1px;
+		margin-right: 10px;
+		color: $default;
+	}
+	&__seconds {
+		font-size: 18px;
+		line-height: 26px;
+		letter-spacing: 1.1px;
+		color: $default;
+	}
+}
+
 @import "media";

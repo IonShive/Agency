@@ -7,7 +7,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-size: 12px;
-	line-height: 25;
+	line-height: 25px;
 	letter-spacing: 1.01px;
 	color: $default;
 	@extend %OpenSans-400;
@@ -25,18 +25,13 @@ a {
 	flex-grow: 1;
 }
 
-.container-max {
-	max-width: 1900px;
-	padding: 50px 50px 60px;
-	margin: 0 auto;
-}
-
 .container {
 	max-width: 1800px;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
-.container {
+.container-content {
 	max-width: 1085px;
 	margin: 0 auto;
 }

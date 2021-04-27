@@ -115,4 +115,83 @@
 	}
 }
 
+.about-us {
+	padding: 180px 0 150px;
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+	}
+	&__top {
+		width: 590px;
+		height: 410px;
+		color: $title;
+		z-index: 5;
+	}
+	&__title {
+		margin-bottom: 5px;
+		font-size: 36px;
+		line-height: 53px;
+		letter-spacing: 2.3px;
+		@extend %Oswald-700;
+	}
+	&__subtitle {
+		margin-bottom: 30px;
+		font-size: 42px;
+		line-height: 57px;
+		letter-spacing: 2.6px;
+		@extend %OpenSans-300;
+	}
+	&__text {
+		width: 280px;
+		margin-left: 70px;
+		font-size: 15px;
+		letter-spacing: 1.2px;
+		@extend %OpenSans-300;
+		position: relative;
+		&::after {
+			content: "";
+			width: 20px;
+			height: 2px;
+			position: absolute;
+			top: 11px;
+			left: -40px;
+			background-color: $title;
+		}
+	}
+	&__footer {
+		display: flex;
+		align-self: flex-end;
+		margin-left: -210px;
+		margin-bottom: -10px;
+	}
+	&__footer-box {
+		position: relative;
+	}
+	&__img {
+		width: 310px;
+		height: 420px;
+	}
+	&__img--top {
+		position: absolute;
+		bottom: 90px;
+		left: -170px;
+		z-index: 1;
+	}
+
+	&__img--center {
+		z-index: 1;
+		opacity: 80%;
+	}
+	&__img--bottom {
+		position: absolute;
+		top: 80px;
+		right: -215px;
+		z-index: -1;
+	}
+	&__footer-text {
+		margin-left: 205px;
+		align-self: flex-end;
+	}
+}
+
 @import "media";

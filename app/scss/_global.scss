@@ -33,5 +33,24 @@ a {
 
 .container-content {
 	max-width: 1085px;
+	padding: 0 15px;
 	margin: 0 auto;
+}
+
+.title {
+	font-size: 48px;
+	line-height: 71px;
+	letter-spacing: 3px;
+	color: $title;
+	@extend %Oswald-700;
+	position: relative;
+	&::before {
+		content: "";
+		width: 45px;
+		height: 2px;
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+		background-color: $title;
+	}
 }

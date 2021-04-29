@@ -5,6 +5,9 @@
 @import "global";
 
 .header {
+	background-color: #000;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-image: url("../img/header/bg.jpg");
 	z-index: 10;
 	&__wrapper {
@@ -282,7 +285,7 @@
 }
 
 .works {
-	padding: 150px 0 180px;
+	padding: 150px 0 30px;
 	&__title {
 		margin-bottom: 120px;
 	}
@@ -577,6 +580,130 @@
 	.slick-next {
 		right: 0;
 		background-image: url("../img/icons/arrow-right.svg");
+	}
+}
+
+.footer {
+	&__items {
+		width: 100%;
+		height: 300px;
+		display: flex;
+	}
+	&__item {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: #fbfbfb;
+		color: $title;
+		svg {
+			width: 50px;
+			height: 50px;
+			margin-bottom: 20px;
+			fill: $title;
+		}
+	}
+	&__item--accent {
+		color: #fff;
+		background-color: $accent;
+		svg {
+			fill: #fff;
+		}
+	}
+	&__item-title {
+		margin-bottom: 20px;
+		font-size: 24px;
+		line-height: 36px;
+		letter-spacing: 2.66667px;
+		@extend %Oswald-400;
+	}
+	&__item-link {
+		font-size: 14px;
+		line-height: 19px;
+		letter-spacing: 1.55556px;
+		opacity: 0.8;
+		@extend %OpenSans-300;
+	}
+	&__top {
+		width: 100%;
+		height: 340px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		font-size: 13px;
+		line-height: 19px;
+		letter-spacing: 0.832px;
+		color: #fff;
+		background-color: $title;
+	}
+	&__address {
+		margin-bottom: 10px;
+		opacity: 0.5;
+		@extend %Oswald-300;
+	}
+	&__box {
+		opacity: 0.5;
+		margin-bottom: 40px;
+		@extend %Oswald-300;
+	}
+	&__inner {
+		width: 255px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__img {
+		width: 55px;
+		height: 55px;
+		margin: 0 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0.5;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		&:hover {
+			opacity: 1;
+			transition: all 0.5s;
+		}
+		&:nth-child(1) {
+			svg {
+				width: 22px;
+			}
+		}
+		&:nth-child(2) {
+			svg {
+				width: 35px;
+			}
+		}
+		&:nth-child(3) {
+			svg {
+				width: 25px;
+			}
+		}
+		svg {
+			height: 35px;
+			fill: #fff;
+		}
+	}
+	&__bottom {
+		width: 100%;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #000;
+	}
+	&__bottom-copyright {
+		font-size: 13px;
+		line-height: 19px;
+		letter-spacing: 0.832px;
+		opacity: 0.5;
+		color: #fff;
+		@extend %Oswald-300;
 	}
 }
 

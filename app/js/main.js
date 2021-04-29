@@ -2,8 +2,26 @@ $(function () {
 
 	var mixer = mixitup('.works__items');
 
+	wow = new WOW(
+		{
+			boxClass: 'wow',
+			animateClass: 'animate__animated',
+			offset: 0,
+			mobile: true,
+			live: true
+		}
+	)
+	wow.init();
+
 	$('.team__slider').slick({
 		fade: true
+	});
+
+	$(".header__nav-link").on("click", function (event) {
+		event.preventDefault();
+		var id = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({ scrollTop: top }, 1500);
 	});
 
 	$(".team__slider-star").rateYo({

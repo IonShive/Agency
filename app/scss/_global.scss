@@ -54,3 +54,39 @@ a {
 		background-color: $title;
 	}
 }
+
+.animate__animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+.animate__fadeInRightBig {
+	animation-name: fadeInRightBig;
+}
+
+@keyframes fadeInRightBig {
+	from {
+		opacity: 0;
+		transform: translate3d(2000px, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.animate__fadeInLeftBig {
+	animation-name: fadeInLeftBig;
+}
+
+@keyframes fadeInLeftBig {
+	from {
+		opacity: 0;
+		transform: translate3d(-2000px, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}

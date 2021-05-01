@@ -2,6 +2,12 @@ $(function () {
 
 	var mixer = mixitup('.works__items');
 
+	$('.menu-toggle').on('click', function () {
+		$('.menu-toggle').toggleClass('menu-toggle--active');
+		$('.header__nav-list').toggleClass('header__nav-list--active');
+		$('.header__nav').toggleClass('header__nav--active');
+	});
+
 	wow = new WOW(
 		{
 			boxClass: 'wow',

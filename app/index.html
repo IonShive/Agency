@@ -13,37 +13,48 @@
 
 <body>
 	<header class="header">
+		<nav class="header__nav">
+			<div class="menu-toggle">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="cross">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<ul class="header__nav-list">
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#works">
+						WORKS
+					</a>
+				</li>
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#about-us">
+						ABOUT
+					</a>
+				</li>
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#services">
+						SERVICES
+					</a>
+				</li>
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#team">
+						BLOG
+					</a>
+				</li>
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#footer">
+						CONTACT
+					</a>
+				</li>
+			</ul>
+		</nav>
 		<div class="container">
 			<div class="header__wrapper">
-				<nav class="header__nav">
-					<ul class="header__nav-list">
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="#">
-								WORKS
-							</a>
-						</li>
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="#about-us">
-								ABOUT
-							</a>
-						</li>
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="#services">
-								SERVICES
-							</a>
-						</li>
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="#team">
-								BLOG
-							</a>
-						</li>
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="#footer">
-								CONTACT
-							</a>
-						</li>
-					</ul>
-				</nav>
 				<div class="header__content">
 					<h1 class="header__title wow animate__fadeInRightBig">
 						WHERE GREAT IDEAS COME TO LIFE
@@ -102,7 +113,7 @@
 					Our Services
 				</h3>
 				<div class="services__items">
-					<div class="services__item wow animate__fadeInRightBig" data-wow-delay="0.5s">
+					<div class="services__item">
 						<div class="services__item-box">
 							<h3 class="services__item-title">
 								Branding
@@ -120,7 +131,7 @@
 							READ MORE
 						</a>
 					</div>
-					<div class="services__item wow animate__fadeInRightBig" data-wow-delay="1s">
+					<div class="services__item">
 						<div class="services__item-box">
 							<h3 class="services__item-title">
 								DESIGN
@@ -139,7 +150,7 @@
 							READ MORE
 						</a>
 					</div>
-					<div class="services__item wow animate__fadeInRightBig" data-wow-delay="1.5s">
+					<div class="services__item">
 						<div class="services__item-box">
 							<h3 class="services__item-title">
 								DEVELOPMENT
@@ -160,12 +171,12 @@
 				</div>
 			</div>
 		</section>
-		<section class="works">
+		<section class="works" id="works">
 			<div class="container-content">
 				<h3 class="works__title title wow animate__fadeInLeftBig">
 					Latest Works
 				</h3>
-				<div class="works__buttons wow animate__fadeInRightBig" data-wow-delay="0.5s">
+				<div class="works__buttons wow animate__fadeInRightBig" data-wow-delay="0.3s">
 					<button class="works__btn" data-filter="all">
 						ALL
 					</button>
@@ -183,7 +194,7 @@
 					</button>
 				</div>
 				<div class="works__items">
-					<div class="works__item mix photography design wow animate__fadeInLeftBig" data-wow-delay="1s">
+					<div class="works__item mix photography design">
 						<img class="works__item-img" src="img/works/1.jpg" alt="works img">
 						<div class="works__inner">
 							<h3 class="works__item-title">
@@ -204,8 +215,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="works__item works__item--right mix photography wow animate__fadeInRightBig"
-						data-wow-delay="1.5s">
+					<div class="works__item works__item--right mix photography">
 						<img class="works__item-img" src="img/works/2.jpg" alt="works img">
 						<h3 class="works__item-title works__item-title--left">
 							100 YEARS
@@ -223,7 +233,7 @@
 							</h5>
 						</div>
 					</div>
-					<div class="works__item mix branding illustration wow animate__fadeInLeftBig" data-wow-delay="2s">
+					<div class="works__item mix branding illustration">
 						<img class="works__item-img" src="img/works/3.jpg" alt="works img">
 						<h3 class="works__item-title works__item-title--apples">
 							APPLE’S
@@ -241,8 +251,7 @@
 							</h5>
 						</div>
 					</div>
-					<div class="works__item works__item--right mix branding design illustration wow animate__fadeInRightBig"
-						data-wow-delay="2.5s">
+					<div class="works__item works__item--right mix branding design illustration">
 						<img class="works__item-img" src="img/works/4.jpg" alt="works img">
 						<h3 class="works__item-title works__item-title--left">
 							GROOVEMADE
@@ -268,7 +277,7 @@
 						The Team
 					</h3>
 					<div class="team__items">
-						<div class="team__item wow animate__fadeInRightBig" data-wow-delay="0.5s">
+						<div class="team__item">
 							<img class="team__item-img" src="img/team/1.jpg" alt="team img">
 							<div class="team__box">
 								<h4 class="team__item-title">
@@ -284,7 +293,7 @@
 								</h6>
 							</div>
 						</div>
-						<div class="team__item wow animate__fadeInRightBig" data-wow-delay="1s">
+						<div class="team__item">
 							<img class="team__item-img" src="img/team/2.jpg" alt="team img">
 							<div class="team__box">
 								<h4 class="team__item-title">
@@ -300,7 +309,7 @@
 								</h5>
 							</div>
 						</div>
-						<div class="team__item wow animate__fadeInRightBig" data-wow-delay="1.5s">
+						<div class="team__item">
 							<img class="team__item-img" src="img/team/3.jpg" alt="team img">
 							<div class="team__box">
 								<h4 class="team__item-title">

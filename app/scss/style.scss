@@ -452,6 +452,11 @@
 		&:last-child {
 			margin-right: 0;
 		}
+		&:nth-child(2) {
+			.team__item-text {
+				padding-bottom: 5px;
+			}
+		}
 	}
 	&__box {
 		width: 100%;

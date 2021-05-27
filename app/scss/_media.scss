@@ -3,6 +3,9 @@
 		&__nav {
 			justify-content: center;
 		}
+		&__title {
+			font-size: 60px;
+		}
 		&__nav-list {
 			margin-right: 0;
 		}
@@ -380,6 +383,27 @@
 		}
 		&__bottom-copyright {
 			font-size: 12px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.team {
+		&__item {
+			&:nth-child(2) {
+				.team__item-text {
+					padding-bottom: 5px;
+				}
+			}
+		}
+		&__item-text {
+			width: 100%;
+			max-width: 370px;
+			padding-bottom: 5px;
+		}
+		&__item-subtitle {
+			width: 100%;
+			max-width: 370px;
 		}
 	}
 }

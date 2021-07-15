@@ -1,92 +1,138 @@
 html,
 body {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	font-size: 12px;
-	line-height: 25px;
-	letter-spacing: 1.01px;
-	color: $default;
-	@extend %OpenSans-400;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 1.01px;
+    color: $default;
+    overflow-x: hidden;
+    @extend %OpenSans-400;
 }
 
 a {
-	font-size: 14px;
-	line-height: 21px;
-	letter-spacing: 2px;
-	color: #fff;
-	@extend %Oswald-400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    color: #fff;
+    @extend %Oswald-400;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #c0c1c2;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #c0c1c2;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
 }
 
 .main {
-	flex-grow: 1;
+    flex-grow: 1;
 }
 
 .container {
-	max-width: 1830px;
-	padding: 0 15px;
-	margin: 0 auto;
+    max-width: 1830px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .container-content {
-	max-width: 1200px;
-	padding: 0 15px;
-	margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .title {
-	font-size: 48px;
-	line-height: 71px;
-	letter-spacing: 3px;
-	color: $title;
-	@extend %Oswald-700;
-	position: relative;
-	&::before {
-		content: "";
-		width: 45px;
-		height: 2px;
-		position: absolute;
-		left: 0;
-		bottom: -5px;
-		background-color: $title;
-	}
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: 3px;
+    color: $title;
+    @extend %Oswald-700;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 45px;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        background-color: $title;
+    }
 }
 
 .animate__animated {
-	animation-duration: 1s;
-	animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 .animate__fadeInRightBig {
-	animation-name: fadeInRightBig;
+    animation-name: fadeInRightBig;
 }
 
 @keyframes fadeInRightBig {
-	from {
-		opacity: 0;
-		transform: translate3d(2000px, 0, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
+    from {
+        opacity: 0;
+        transform: translate3d(2000px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 .animate__fadeInLeftBig {
-	animation-name: fadeInLeftBig;
+    animation-name: fadeInLeftBig;
 }
 
 @keyframes fadeInLeftBig {
-	from {
-		opacity: 0;
-		transform: translate3d(-2000px, 0, 0);
-	}
+    from {
+        opacity: 0;
+        transform: translate3d(-2000px, 0, 0);
+    }
 
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate__fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate__fadeInDown {
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }

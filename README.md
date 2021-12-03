@@ -5,7 +5,7 @@
 
 ## Requirements:
 * [Node.js](https://nodejs.org/en/)
-* [npm](https://www.npmjs.com/)
+* [npm](https://www.npmjs.com/) Version 14.15.1 
 * [gulp](https://gulpjs.com/)
 * [git](https://git-scm.com/)
 

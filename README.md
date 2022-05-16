@@ -41,8 +41,6 @@
   - [VK](https://vk.com/id651052224)
   - [Github](https://github.com/IonShive) 
 
-
-
 # RUS
 # Верстка проекта "Agency"
 
